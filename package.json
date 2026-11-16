@@ -1,0 +1,29 @@
+{
+  "name": "setbg",
+  "version": "0.1.0",
+  "description": "Set your terminal background using Tailwind CSS colors.",
+  "license": "MIT",
+  "author": "Tim Zadorozhny",
+  "homepage": "https://github.com/tzador/setbg#readme",
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/tzador/setbg.git"
+  },
+  "bugs": {
+    "url": "https://github.com/tzador/setbg/issues"
+  },
+  "keywords": [
+    "terminal",
+    "background",
+    "colors",
+    "tailwindcss",
+    "cli"
+  ],
+  "bin": {
+    "setbg": "bin/setbg",
+    "unsetbg": "bin/unsetbg"
+  },
+  "files": [
+    "bin"
+  ]
+}
