@@ -2,7 +2,8 @@
 
 usage() {
     cat <<'HELP'
-Usage: setbg <color> [shade]
+Usage: bgcolor <color> [shade]
+       bgcolor reset
 
 Set the terminal background using a Tailwind CSS color.
 
@@ -16,12 +17,12 @@ Shades (light to dark):
   Default: 900
 
 Examples:
-  setbg orange
-  setbg amber 900
-  setbg purple 50
-  setbg teal 950
+  bgcolor orange
+  bgcolor amber 900
+  bgcolor purple 50
+  bgcolor teal 950
 
-Run unsetbg to restore the terminal's default background.
+Run bgcolor reset to restore the terminal's default background.
 Palette: https://tailwindcss.com/docs/colors
 HELP
 }
@@ -38,6 +39,14 @@ fi
 
 case "$1" in
     --help|-h) usage; exit 0 ;;
+    reset)
+        if [ "$#" -ne 1 ]; then
+            usage >&2
+            exit 2
+        fi
+        printf '\033]111\033\\' > /dev/tty
+        exit 0
+        ;;
 esac
 
 family=$1
