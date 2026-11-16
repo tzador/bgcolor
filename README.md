@@ -5,13 +5,13 @@ Set your terminal background using [Tailwind CSS colors](https://tailwindcss.com
 ## Install
 
 ```sh
-bun install -g bgcolor
+bun install -g @tzador/bgcolor
 ```
 
 or
 
 ```sh
-npm install -g bgcolor
+npm install -g @tzador/bgcolor
 ```
 
 ## Usage
@@ -29,8 +29,8 @@ Running `bgcolor` without arguments also shows help. Shades range from `50` to `
 Try without installing:
 
 ```sh
-npx bgcolor orange
-npx bgcolor reset
+npx @tzador/bgcolor orange
+npx @tzador/bgcolor reset
 ```
 
 Requires a Unix-like environment with `sh` and a terminal that supports OSC 11 (set background) and OSC 111 (reset background).

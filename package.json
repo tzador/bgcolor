@@ -1,5 +1,5 @@
 {
-  "name": "bgcolor",
+  "name": "@tzador/bgcolor",
   "version": "0.1.0",
   "description": "Set your terminal background using Tailwind CSS colors.",
   "license": "MIT",
@@ -24,5 +24,8 @@
   },
   "files": [
     "bin"
-  ]
+  ],
+  "publishConfig": {
+    "access": "public"
+  }
 }
